@@ -1,10 +1,15 @@
-import { useState } from "react";
-import "./App.css";
+import { useState } from 'react';
+import './App.css';
+import CourseList from './components/CourseList';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>Hello React</>;
+  return (
+    <>
+      <main>
+        <CourseList />
+      </main>
+    </>
+  );
 }
 
 export default App;
