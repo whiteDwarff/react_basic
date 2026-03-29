@@ -1,18 +1,19 @@
 import CourseItem from './CourseItem';
+import Card from './Card'
 
-export default function CourseList() {
+export default function CourseList({ items }) {
+
   return (
     <>
-      <div className='card'>
-        <div className='card__header'>강의 목록</div>
-        <div className='card__body'>
-          <div className='courses'>
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-          </div>
-        </div>
+    <Card title="강의 목록">
+      <div className='courses'>
+        { 
+          items.map((item, index) => (
+            <CourseItem key={index} {...item} />
+          ))
+        }
       </div>
+    </Card>
     </>
   );
 }
