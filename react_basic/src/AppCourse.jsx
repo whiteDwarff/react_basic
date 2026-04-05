@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './AppCourse.css';
 
 import CourseList from './components/CourseList';
 import CourseForm from './components/CourseForm';

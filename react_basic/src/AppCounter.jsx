@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './AppCounter.css';
+import './App.css';
 
 import Header from './components/Hedaer';
 import Main from './components/Main';
